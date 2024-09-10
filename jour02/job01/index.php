@@ -6,6 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <main class="container">
+    <article id="citation">
+        La vie a beaucoup plus d'imagination que nous
+    </article>
+    <button id="button">
+        clique moi
+    </button>
+</main>
 </body>
 </html>
