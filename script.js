@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
-    function showhide() {
-        let article = document.getElementById('citation');
+    document.getElementById('button').addEventListener('click',addone);
 
-        if (article.textContent.trim() === '') {
-            article.textContent = "L'important n'est pas la chute, mais l'atterrissage.";
-        } else {
-            article.textContent = '';
-        }
+    function addone() {
+        let compteur = parseInt(document.getElementById('compteur').textContent);
+        compteur++;
+        document.getElementById('compteur').textContent = compteur;
+       console.log(compteur);
+        
     }
+    
 
-    document.getElementById('button').addEventListener('click', showhide);
 });
