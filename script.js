@@ -1,13 +1,12 @@
-var textarea = document.getElementById("keylogger");
+window.addEventListener("scroll", function() {
+    var body = document.body;
+    var scrollHeight = body.scrollHeight - window.innerHeight; 
+    var scrollTop = window.scrollY; 
 
-document.addEventListener("keypress", function(event) {
-    var key = event.key.toLowerCase();
+    var scrollPercent = (scrollTop / scrollHeight) * 100; 
 
-    if (key.match(/[a-z]/)) {
-        if (document.activeElement === textarea) {
-            textarea.value += key.repeat(1);
-        } else {
-            textarea.value += key;
-        }
-    }
+    var hue = Math.round((scrollPercent / 100) * 120); 
+
+    var footer = document.querySelector("footer");
+    footer.style.backgroundColor = "hsl(" + hue + ", 100%, 50%)";
 });
