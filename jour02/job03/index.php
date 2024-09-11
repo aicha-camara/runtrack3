@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="./script.js"></script>
   
 </head>
 <body>
     <main class="container">
-    <article id="citation">
-        La vie a beaucoup plus d'imagination que nous
-    </article>
     <button id="button">
         clique moi
     </button>
+    <p id="compteur">
+    0
+    </p>
 </main>
+<script src="./script.js"></script>
 </body>
 </html>
