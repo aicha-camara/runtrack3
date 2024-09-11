@@ -1,16 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
-  
 </head>
 <body>
-    <main class="container">
-        <textarea name="" id="keylogger"></textarea>
+    <footer></footer> 
 
-    </main>
-<script src="./script.js"></script>
+    <script src="script.js"></script> 
 </body>
 </html>
