@@ -1,13 +1,13 @@
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('button').addEventListener('click',addone);
+var textarea = document.getElementById("keylogger");
 
-    function addone() {
-        let compteur = parseInt(document.getElementById('compteur').textContent);
-        compteur++;
-        document.getElementById('compteur').textContent = compteur;
-       console.log(compteur);
-        
+document.addEventListener("keypress", function(event) {
+    var key = event.key.toLowerCase();
+
+    if (key.match(/[a-z]/)) {
+        if (document.activeElement === textarea) {
+            textarea.value += key.repeat(1);
+        } else {
+            textarea.value += key;
+        }
     }
-    
-
 });
