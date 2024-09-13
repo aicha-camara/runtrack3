@@ -3,19 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>pokemon</title>
 </head>
 <body>
-    <main class="container">
-     
-    <button id="button">
-    clique moi
-    </button >
-    <p></p>
+    <form id="filterForm">
+        <label for="id">ID :</label>
+        <input type="text" id="id" name="id">
+        <br>
 
-    </main>  
-    <script src="script.js"></script> 
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name">
+        <br>
+
+        <label for="type">Type :</label>
+        <select id="type" name="type">
+            <option value="">Sélectionnez un type</option>
+            <option value="Grass">Grass</option>
+            <option value="Fire">Fire</option>
+            <option value="Water">Water</option>
+            <option value="Psychic">Psychic</option>
+        </select>
+        <br>
+
+        <input type="button" id="filterButton" value="Filtrer">
+    </form>
+
+    <div id="result"></div>
+
+    <script src="script.js"></script>
 </body>
 </html>
