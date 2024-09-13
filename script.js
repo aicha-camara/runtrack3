@@ -1,10 +1,7 @@
-$(document).ready(function(){
-    $("#cacher").click(function(){
-        $("p").hide();
-    });
-    
-    $("#afficher").click(function(){
-        $("p").show();
-    });
-
-});
+async function afficherExpression(){
+    const url = "expression.txt";
+    const response = await fetch(url);
+    const text = await response.text();
+    document.querySelector("p").innerHTML = text;
+}
+document.getElementById("button").addEventListener("click",afficherExpression);
