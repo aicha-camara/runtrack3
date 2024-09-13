@@ -9,18 +9,13 @@
 </head>
 <body>
     <main class="container">
-    <p>
-    Les logiciels et les cathédrales, c'est un peu la même chose - d'abord on les construit,
-    ensuite on prie.
-    </p>
-    <button id="cacher">
-    cacher le texte
+     
+    <button id="button">
+    clique moi
     </button >
-    <button id="afficher">
-    afficher le texte
-    </button >
-    </main>  
+    <p></p>
 
+    </main>  
     <script src="script.js"></script> 
 </body>
 </html>
