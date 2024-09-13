@@ -1,0 +1,37 @@
+/* Conteneur du puzzle */
+#puzzle-container {
+    display: flex;              /* Aligner les pièces horizontalement */
+    flex-wrap: wrap;            /* Permet aux pièces de passer à la ligne suivante si nécessaire */
+    gap: 10px;                  /* Espace entre les pièces */
+    justify-content: center;    /* Centre les pièces horizontalement dans le conteneur */
+    margin-top: 20px;           /* Marge au-dessus du conteneur */
+}
+
+/* Style des pièces de puzzle */
+.puzzle-piece {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    overflow: hidden;
+    position: relative;
+    background-color: #f0f0f0; /* Couleur de fond pour mieux visualiser les pièces */
+}
+
+/* Style des images à l'intérieur des pièces */
+.puzzle-piece img {
+    width: 100%;                /* L'image occupe toute la largeur de la pièce */
+    height: 100%;               /* L'image occupe toute la hauteur de la pièce */
+    object-fit: auto;           /* Conserve les proportions originales de l'image */
+}
+  
+/* Conteneur pour l'affichage du jeu ou des images agrandies */
+#game-container {
+    width: 600px;   /* Ajuste selon tes besoins */
+    height: 100px;  /* Ajuste selon tes besoins */
+    border: 2px dashed black; /* Bordure en pointillé pour la zone de dépôt */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: relative; /* Nécessaire pour les éléments qui seront déplacés dans cette zone */
+}
